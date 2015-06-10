@@ -2,6 +2,7 @@
 {% load filters %}
 {% load inclusions %}
 
+
 {% if category.results|length > 0 %}
 
         {% get_category_heading category.item as heading_tag %}
@@ -9,7 +10,7 @@
             <td class="filter-checkbox">
                 <input type="checkbox" name="category-selected" value="{{category.item.id}}" class="category {{ category.item|get_parent_ids }}" title="Select category: {{category.item.name}} "/>
             </td>
-            <td colspan="4" >
+            <td colspan="3" >
             <{{heading_tag}} id="c{{category.item.id}}">{{ category.item.name }}</{{heading_tag}}>
             </td>
         </tr>
