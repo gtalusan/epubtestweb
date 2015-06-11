@@ -57,7 +57,7 @@ function set_test_descriptions_hidden() {
         var headers = $('.header-row');
         headers.each(function(i) {
             var header = $(headers[i]);
-            var next = header[i + 1];
+            var next = headers[i + 1];
 
             header.scrollToFixed({
                 marginTop: $('.header').outerHeight(true) + 10,
