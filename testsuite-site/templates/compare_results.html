@@ -54,9 +54,9 @@ function set_test_descriptions_hidden() {
 
         $('.fixed').scrollToFixed();
 
-        var header = $('.header-row');
-        header.each(function(i) {
-            var header = $(header[i]);
+        var headers = $('.header-row');
+        headers.each(function(i) {
+            var header = $(headers[i]);
             var next = header[i + 1];
 
             header.scrollToFixed({
